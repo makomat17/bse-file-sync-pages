@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — BSE File Sync</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;max-width:760px;margin:64px auto;padding:0 24px;color:#172b3a;background:#fafbfc}h1,h2{line-height:1.2}a{color:#165caa}footer{margin-top:48px;border-top:1px solid #dce2e7;padding-top:20px;font-size:15px}</style>
+<main>
+<p><a href="index.html">BSE File Sync</a></p>
+<h1>Privacy policy</h1>
+<p>Last updated: 4 October 2026.</p>
+<p>BSE File Sync is a personal utility maintained by makomat17. This policy describes its authorised purpose and planned sync workflow. Development is in progress; Google authorisation is implemented, while automated downloading, classification and scheduling are not yet complete.</p>
+<h2>Information accessed</h2>
+<p>With the owner's permission, the utility accesses the signed-in Google account's email address and verification status; Classroom course names and identifiers; selected courses' topics, coursework and materials; and linked Drive file metadata and downloadable content. The selected courses are International Trade, Foundations of Data Science and QSM I.</p>
+<p>Google's permission scopes can cover more information than the utility needs. The utility is intended to query only the saved selected course identifiers after initial discovery and not to collect grades, submissions, rosters or unrelated Drive files as part of the sync.</p>
+<h2>Purpose</h2>
+<p>Information is used to verify the account, identify new or changed attachments, download accessible study materials, organise them into the owner's folders and maintain a record of successful downloads. That record includes file identifiers, source course and topic or material title, modification times, destination paths and content hashes.</p>
+<h2>Storage and service providers</h2>
+<p>OAuth client credentials and saved access tokens are encrypted using Windows user-account protection and stored outside the configured OneDrive destination. Downloaded materials and sync records are stored on the owner's computer. Materials filed inside the OneDrive folder may be uploaded to Microsoft OneDrive according to the owner's settings.</p>
+<p>The planned classification step sends a batch of new-file information to OpenAI through Codex. This may include filenames, course and topic titles, the existing folder structure and content excerpts where needed to choose a destination. Google access tokens and client secrets are not classification inputs. OpenAI's processing and retention depend on the owner's service plan and account settings.</p>
+<p>The operator does not sell Google user data or use it for advertising. This public website does not contain course materials, credentials or sync records. GitHub Pages hosts the website and may process ordinary request information, such as IP addresses, under GitHub's privacy statement. These pages contain no added analytics, tracking scripts or forms.</p>
+<h2>Retention and control</h2>
+<p>Local files, records and encrypted credentials remain until the owner removes them. The sync is designed not to delete, move or overwrite existing user files. Revoking Google access stops future authorised API access but does not delete files already downloaded or copies held by OneDrive or other providers.</p>
+<p>The owner can revoke access through <a href="https://myaccount.google.com/connections">Google Account connections</a>, disable any configured scheduled task, and delete local credentials, records or downloaded files. Provider-held copies and retention are managed through the relevant provider's settings and policies.</p>
+<h2>Contact and changes</h2>
+<p>Questions about this utility or its handling of information can be sent to <a href="mailto:mateobartra5@gmail.com">mateobartra5@gmail.com</a>. This policy will be updated when the implemented workflow materially changes.</p>
+</main>
+<footer><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a> · <a href="https://openai.com/policies/privacy-policy/">OpenAI privacy policy</a> · <a href="https://privacy.microsoft.com/privacystatement">Microsoft privacy statement</a></footer>
+</html>
